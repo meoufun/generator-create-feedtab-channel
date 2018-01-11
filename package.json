@@ -12,6 +12,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doudounannan/generator-create-feedtab-channel.git"
+  },
   "author": "zhengmeiyu@baidu.com",
   "license": "ISC",
   "dependencies": {
