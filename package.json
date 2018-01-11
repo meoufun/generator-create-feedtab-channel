@@ -1,0 +1,24 @@
+{
+  "name": "generator-create-feedtab-channel",
+  "version": "1.0.0",
+  "keywords": [
+    "feedtab频道接入生成器"
+  ],
+  "description": "feedtab频道接入生成器",
+  "files": [
+    "generators"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhengmeiyu@baidu.com",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.20.1",
+    "yeoman-generator": "^2.0.2",
+    "yosay": "^2.0.1"
+  }
+}

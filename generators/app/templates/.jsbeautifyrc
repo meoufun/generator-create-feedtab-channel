@@ -1,0 +1,5 @@
+{
+    "operator_position": "after-newline",
+    "wrap_line_length": 120,
+    "end_with_newline": true
+}

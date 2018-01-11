@@ -1,0 +1,29 @@
+{
+  "name": "<%= APP_NAME_PREFIX + appName %>",
+  "version": "1.0.0",
+  "description": "<%= appName %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint src && sh tools/lint.sh"
+  },
+  "pre-commit": "test",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@icode.baidu.com:8235/baidu/feedhn/<%= APP_NAME_PREFIX + appName %>"
+  },
+  "keywords": [
+    "<%= APP_NAME_PREFIX + appName %>",
+    "feedtab"
+  ],
+  "author": "<%= appEmail %>",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "babel-eslint": "^8.0.3",
+    "eslint": "^4.12.1",
+    "eslint-config-superfe-hn": "^2.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-html": "^4.0.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "pre-commit": "^1.2.2"
+  }
+}
