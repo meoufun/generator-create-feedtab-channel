@@ -1,6 +1,6 @@
 {
   "name": "generator-create-feedtab-channel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "feedtab频道接入生成器"
   ],
