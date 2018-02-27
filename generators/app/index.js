@@ -61,9 +61,9 @@ module.exports = class extends Generator {
         const files = [
             '.editorconfig',
             '.eslintrc.yml',
-            '.gitignore',
+            'gitignore',
             '.jsbeautifyrc',
-            '.npmrc',
+            'npmrc',
             'ci.yml',
             'package.json',
             'README.md',
@@ -72,11 +72,23 @@ module.exports = class extends Generator {
         ];
 
         files.forEach((fileName) => {
-            this.fs.copyTpl(
-                this.templatePath(fileName),
-                this.destinationPath(fileName),
-                this.props
-            );
+            // 此处为 npm 默认 ignore
+            // 无法自动配置
+            // github 上提的 issue 还未解决已被关掉
+            // 只能在此处 hack 了
+            if (fileName === 'npmrc' || fileName === 'gitignore') {
+                this.fs.copyTpl(
+                    this.templatePath(fileName),
+                    this.destinationPath('.' + fileName),
+                    this.props
+                );
+            } else {
+                this.fs.copyTpl(
+                    this.templatePath(fileName),
+                    this.destinationPath(fileName),
+                    this.props
+                );
+            }
         });
     }
 }
