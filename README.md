@@ -14,7 +14,7 @@ $ npm i -g generator-create-feedtab-channel
 ## 使用
 
 ```bash
-$ mkdir test-subtab
+$ mkdir test-subtab && cd $_
 $ yo
 ```
 
