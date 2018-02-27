@@ -19,3 +19,7 @@ $ yo
 ```
 
 ![preview](http://doudou-space.qiniudn.com/generator-subtab.gif)
+
+## PS
+
+使用 generator-create-feedtab-channel 过程中，如果报错 template 下面没有.gitignore文件和.npmrc文件，请使用 `npm update -g generator-create-feedtab-channel` 来更新
