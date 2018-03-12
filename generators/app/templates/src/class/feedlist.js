@@ -10,7 +10,7 @@ import FeedList from 'class/feedlist/feedlist';
 
 console.log('feedlist-<%= appName %>');
 
-export default class ActivityLightningFeedList extends FeedList {
+export default class <%= channelName %>FeedList extends FeedList {
     constructor(channelId) {
         super(channelId);
     }

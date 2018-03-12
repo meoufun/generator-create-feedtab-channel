@@ -13,9 +13,9 @@ console.log('nexter-<%= appName %>');
 export default function channelize(channelId) {
     const Nexter = channelizedNexter(channelId);
 
-    class ChannelNexter extends Nexter {
+    class <%= channelName %>Nexter extends Nexter {
 
     }
 
-    return ChannelNexter;
+    return <%= channelName %>Nexter;
 }

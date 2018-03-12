@@ -9,10 +9,6 @@
 import channelizedHomePage from 'channelization/home-page/home-page';
 import channelization from 'channelization/channelization';
 
-import {
-    DOM_PREFIX
-} from 'singleton/constant';
-
 console.log('homepage-<%= appName %>');
 
 export default function channelize(channelId) {
@@ -23,9 +19,9 @@ export default function channelize(channelId) {
 
     const HomePage = channelizedHomePage(channelId);
 
-    class channelHomePage extends HomePage {
+    class <%= channelName %>HomePage extends HomePage {
 
     }
 
-    return channelHomePage;
+    return <%= channelName %>HomePage;
 }

@@ -10,7 +10,7 @@ import Storer from 'factory/storer/storer';
 
 console.log('storer-<%= appName %>');
 
-export default class channelStorer extends Storer {
+export default class <%= channelName %>Storer extends Storer {
     static initialStates = {
 
     };

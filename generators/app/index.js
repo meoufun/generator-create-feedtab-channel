@@ -19,8 +19,8 @@ module.exports = class extends Generator {
         super(args, opts);
 
         this.props = {
-            APP_NAME_PREFIX: 'feedtab-',
-            appName: this.appname,
+            APP_NAME_PREFIX: '',
+            appName: this.appname.replace(/\s+/g, '-'),
             appAuthor: this.user.git.name(),
             appEmail: this.user.git.email(),
             createTime: moment().format('YYYY-MM-DD HH:mm:ss'),
@@ -36,9 +36,16 @@ module.exports = class extends Generator {
         var prompts = [{
             type: 'input',
             name: 'appName',
-            message: '频道名称',
+            message: '频道名称(形如feedtab-test-submodule)',
             required: true,
-            default: this.props.appName
+            default: this.props.appName,
+            validate: function(input) {
+                if (/feedtab(-\w+)+/.test(input)) {
+                    return true;
+                }
+
+                return false;
+            }
         }, {
             type: 'input',
             name: 'appAuthor',
@@ -54,6 +61,8 @@ module.exports = class extends Generator {
         }];
 
         return this.prompt(prompts).then((props) => {
+            // 频道名称形如feedtab-test-submodule， channelName = TestSubmodule
+            this.props.channelName = _.capitalize(_.camelCase(props.appName.substr(8)));
             this.props = _.merge({}, this.props, props);
         });
     }

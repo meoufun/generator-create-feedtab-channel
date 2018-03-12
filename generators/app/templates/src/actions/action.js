@@ -6,7 +6,7 @@
  * @Data <%= createTime %>
  * @version 1.0.0
  */
-const channelActions = {
+const <%= channelName %>Actions = {
 
 };
 
@@ -16,4 +16,4 @@ console.log('action-<%= appName %>');
 // I have to eslint-disable this because
 // in returning-in-defining style, jsformat
 // in sublime cannot format codes correctly.
-export default channelActions;
+export default <%= channelName %>Actions;
