@@ -3,7 +3,7 @@
  * @file
  * channelization/home-page.js
  * @author <%= appEmail %>
- * @Data <%= createTime %>
+ * @Date <%= createTime %>
  * @version 1.0.0
  */
 import channelizedHomePage from 'channelization/home-page/home-page';

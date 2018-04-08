@@ -3,7 +3,7 @@
  * @file
  * actions/action.js
  * @author <%= appEmail %>
- * @Data <%= createTime %>
+ * @Date <%= createTime %>
  * @version 1.0.0
  */
 const <%= channelName %>Actions = {

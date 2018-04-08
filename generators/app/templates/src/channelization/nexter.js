@@ -3,7 +3,7 @@
  * @file
  * channelization/nexter.js
  * @author <%= appEmail %>
- * @Data <%= createTime %>
+ * @Date <%= createTime %>
  * @version 1.0.0
  */
 import channelizedNexter from 'channelization/nexter/nexter';
