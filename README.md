@@ -9,7 +9,7 @@ feedtab 新频道初始化脚手架
 $ npm i -g yo
 # 安装 generator-create-feedtab-channel
 $ npm i -g generator-create-feedtab-channel
-``
+```
 
 ## 使用
 
